@@ -1,0 +1,4 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">I9eLrjteIR9jfABxR98u8PwmGS1G54cbf3c2-0267-4c14-9fc5-14be18e45a6c</string>
+    <string name="app_name">topLayer</string>
+</resources>
