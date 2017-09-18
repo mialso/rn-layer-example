@@ -10,23 +10,33 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Button
 } from 'react-native';
 
 class topLayer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { color: "blue" }
+  }
   render() {
     return (
-      <View style={styles.container}>
+      <View
+        collapsible="false"
+        pointerEvents="box-none"
+        style={styles.container}>
+        <Button title="R" onPress={() => this.setState({color: "red"})}>Red</Button>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
-        <Text style={styles.instructions}>
+        <Text style={{ color: this.state.color }}>
           To get started, edit index.android.js
         </Text>
         <Text style={styles.instructions}>
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
+        <Button title="B" onPress={() => this.setState({color: "blue"})}>Blue</Button>
       </View>
     );
   }
@@ -38,7 +48,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    elevation: 0,
   },
   welcome: {
     fontSize: 20,
