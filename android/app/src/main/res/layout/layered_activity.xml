@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     android:id="@+id/layer_container"
     tools:context="com.toplayer.LayeredActivity">
-    <fragment android:name="com.toplayer.BaseFragment"
+    <!--fragment android:name="com.toplayer.BaseFragment"
         android:id="@+id/base"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" /-->
 
 </FrameLayout>
