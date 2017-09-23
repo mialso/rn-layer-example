@@ -1262,6 +1262,12 @@ var _reactNativeCodePush2 = babelHelpers.interopRequireDefault(_reactNativeCodeP
 
 var _reactNative = require(29            ); // 29 = react-native
 
+var _store = require(322         ); // 322 = ./js/store
+
+var _store2 = babelHelpers.interopRequireDefault(_store);
+
+var COLOR_CHANGE = 'COLOR_CHANGE';
+
 var topLayer = function (_Component) {
   babelHelpers.inherits(topLayer, _Component);
 
@@ -1270,15 +1276,28 @@ var topLayer = function (_Component) {
 
     var _this = babelHelpers.possibleConstructorReturn(this, (topLayer.__proto__ || Object.getPrototypeOf(topLayer)).call(this, props));
 
-    _this.state = { color: "blue" };
+    _this.colorChangeHandler = function (event) {
+      return _this.setState({ color: event.color });
+    };
+
+    _this.state = { color: "black" };
     return _this;
   }
 
   babelHelpers.createClass(topLayer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      _reactNative.DeviceEventEmitter.addListener(COLOR_CHANGE, this.colorChangeHandler);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      _reactNative.DeviceEventEmitter.removeAllListeners(COLOR_CHANGE);
+    }
+  }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
+      _store2.default.show("some", 12);
       return _react2.default.createElement(
         _reactNative.View,
         {
@@ -1286,34 +1305,34 @@ var topLayer = function (_Component) {
           pointerEvents: 'box-none',
           style: styles.container, __source: {
             fileName: _jsxFileName,
-            lineNumber: 24
+            lineNumber: 39
           }
         },
-        _react2.default.createElement(
-          _reactNative.Button,
-          { title: 'R', onPress: function onPress() {
-              return _this2.setState({ color: "red" });
-            }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 28
-            }
+        _react2.default.createElement(_reactNative.Button, {
+          disabled: this.state.color === 'red' ? true : false,
+          title: 'set color Red',
+          onPress: function onPress() {
+            return _store2.default.pushAction(COLOR_CHANGE, { colorName: "red" });
           },
-          'Red'
-        ),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43
+          }
+        }),
         _react2.default.createElement(
           _reactNative.Text,
           { style: styles.welcome, __source: {
               fileName: _jsxFileName,
-              lineNumber: 29
+              lineNumber: 48
             }
           },
           'Welcome to React Native!'
         ),
         _react2.default.createElement(
           _reactNative.Text,
-          { style: { color: this.state.color }, __source: {
+          { style: { color: this.state.color, fontSize: 16 }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 32
+              lineNumber: 51
             }
           },
           'To get started, edit index.android.js'
@@ -1322,24 +1341,24 @@ var topLayer = function (_Component) {
           _reactNative.Text,
           { style: styles.instructions, __source: {
               fileName: _jsxFileName,
-              lineNumber: 35
+              lineNumber: 54
             }
           },
           'Double tap R on your keyboard to reload,',
           '\n',
           'Shake or press menu button for dev menu'
         ),
-        _react2.default.createElement(
-          _reactNative.Button,
-          { title: 'B', onPress: function onPress() {
-              return _this2.setState({ color: "blue" });
-            }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 39
-            }
+        _react2.default.createElement(_reactNative.Button, {
+          disabled: this.state.color === 'green' ? true : false,
+          title: 'set color Green',
+          onPress: function onPress() {
+            return _store2.default.pushAction(COLOR_CHANGE, { colorName: "green" });
           },
-          'Blue'
-        )
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 58
+          }
+        })
       );
     }
   }]);
@@ -54431,5 +54450,13 @@ module.exports = function (NativeCodePush) {
   return { local: local, remote: remote };
 };
 }, 321, null, "react-native-code-push/package-mixins.js");
+__d(/* topLayer/js/store.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _reactNative = require(29            ); // 29 = react-native
+
+exports.default = _reactNative.NativeModules.ReactStore;
+}, 322, null, "topLayer/js/store.js");
 ;require(67);
 ;require(0);

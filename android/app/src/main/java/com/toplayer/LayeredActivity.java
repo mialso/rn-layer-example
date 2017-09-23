@@ -8,7 +8,7 @@ import com.hudl.oss.react.fragment.ReactFragment;
 
 public class LayeredActivity extends AppCompatActivity implements DefaultHardwareBackBtnHandler {
 
-    BaseFragment b1, b2;
+    BaseFragment baseLayer;
     private static final String REACT_COMP_NAME = "topLayer";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +18,7 @@ public class LayeredActivity extends AppCompatActivity implements DefaultHardwar
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.layer_container, b1 = new BaseFragment())
-                .commit();
-
-            getSupportFragmentManager()
-                .beginTransaction()
-                .add(R.id.layer_container, b2 = new BaseFragment())
+                .add(R.id.layer_container, baseLayer = new BaseFragment())
                 .commit();
 
             getSupportFragmentManager()
@@ -42,10 +37,8 @@ public class LayeredActivity extends AppCompatActivity implements DefaultHardwar
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        if (!b2.dispatchTouchEvent(ev)) {
-            if (!b1.dispatchTouchEvent(ev)) {
-                return super.dispatchTouchEvent(ev);
-            }
+        if (!baseLayer.dispatchTouchEvent(ev)) {
+            return super.dispatchTouchEvent(ev);
         }
         return true;
     }
