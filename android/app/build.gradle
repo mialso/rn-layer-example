@@ -1,3 +1,14 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "me.tatarka:gradle-retrolambda:3.6.1"
+    }
+}
+
+apply plugin: "me.tatarka.retrolambda"
 apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
@@ -100,6 +111,7 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -112,6 +124,12 @@ android {
             include "armeabi-v7a", "x86"
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled enableProguardInReleaseBuilds
@@ -136,6 +154,7 @@ android {
 dependencies {
     compile project(':react-native-code-push')
     compile fileTree(dir: "libs", include: ["*.jar"])
+    compile "com.android.support:multidex:1.0.1"
     compile "com.android.support:appcompat-v7:25.3.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
     compile "com.github.hudl:react-native-android-fragment:+"

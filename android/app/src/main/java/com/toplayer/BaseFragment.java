@@ -8,88 +8,60 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
+import android.widget.TextView;
 import com.toplayer.store.ColorStore;
-
-import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.annotations.NonNull;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.schedulers.Schedulers;
 
 public class BaseFragment extends Fragment {
+    public final static String TAG = BaseFragment.class.getSimpleName();
+
     private View view;
-    Disposable subscription;
+    private TextView textView;
+    private Button toggleButton;
+    private Button colorButton;
+    private CompositeDisposable subscriptions = new CompositeDisposable();
     String BTN_COLOR = "green";
-    Observer<String> colorObserver = new Observer<String>() {
-
-        @Override
-        public void onSubscribe(@NonNull Disposable d) {
-            subscription = d;
-        }
-
-        @Override
-        public void onNext(@NonNull String s) {
-            Log.d("NativeFrag: onNext", s);
-            View viewIn = getView();
-            if (viewIn == null) {
-                Log.e("NativeFrag: onNext: ", "no View");
-                return;
-            }
-            if (s.equals(BTN_COLOR)) {
-                viewIn.findViewById(R.id.btnColor).setEnabled(false);
-            } else {
-                viewIn.findViewById(R.id.btnColor).setEnabled(true);
-            }
-        }
-
-        @Override
-        public void onError(@NonNull Throwable e) {}
-
-        @Override
-        public void onComplete() {}
-    };
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.base_fragment, container, false);
+        textView = (TextView) view.findViewById(R.id.text);
 
-        final Button btnToggle = (Button) view.findViewById(R.id.btnToggle);
-        btnToggle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Button me = (Button) view.findViewById(R.id.btnToggle);
-                me.setText((btnToggle.getText() == "Hide") ? "Show" : "Hide");
-            }
-        });
-        btnToggle.setText("Hide");
+        toggleButton = (Button) view.findViewById(R.id.btnToggle);
+        toggleButton.setOnClickListener(ignored -> toggleButton.setText((toggleButton.getText() == "Hide") ? "Show" : "Hide"));
+        toggleButton.setText("Hide");
 
-        final Button btnChangeColor = (Button) view.findViewById(R.id.btnColor);
-        btnChangeColor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ColorStore.setColor(BTN_COLOR);
-            }
-        });
+        colorButton = (Button) view.findViewById(R.id.btnColor);
+        colorButton.setOnClickListener(ignored -> ColorStore.setColor(BTN_COLOR));
         ColorStore.getColorObservable()
-                .subscribeOn(AndroidSchedulers.mainThread())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(colorObserver);
+            .doOnSubscribe(subscriptions::add)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(s -> {
+                Log.d("NativeFrag: onNext", s);
+                //NP: why do we need this check? most likely redundant
+                if (getView() == null) {
+                    Log.e("NativeFrag: onNext: ", "no View");
+                    return;
+                }
+                colorButton.setEnabled(!s.equals(BTN_COLOR));
+            });
 
         return view;
     }
 
     @Override
-    public void onDestroy() {
-        if (!subscription.isDisposed()) {
-            subscription.dispose();
-        }
-        super.onDestroy();
+    public void onDestroyView() {
+        subscriptions.dispose();
+        super.onDestroyView();
     }
 
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        return view.dispatchTouchEvent(ev);
+        textView.setText(textView.getText() + "\n" + ev.toString() + (view.dispatchTouchEvent(ev) ? "HANDLED" : ""));
+        return false;
     }
 
 }
