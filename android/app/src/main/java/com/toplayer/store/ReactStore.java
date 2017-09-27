@@ -85,6 +85,10 @@ public class ReactStore extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void bannerClick(String bannerName) {
+        Log.d("banner_click", bannerName);
+    }
+    @ReactMethod
     public void getColor(Callback success) {
         success.invoke("green");
     }

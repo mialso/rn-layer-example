@@ -9,4 +9,10 @@
         android:layout_height="wrap_content"
         android:onClick="goToReactView"
         android:text="Go to LayeredView" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToBannerView"
+        android:text="Go to BannerView" />
 </LinearLayout>
