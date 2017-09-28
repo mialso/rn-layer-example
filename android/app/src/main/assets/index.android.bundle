@@ -1257,11 +1257,18 @@ var _BannerOne = require(324             ); // 324 = ./js/BannerOne
 
 var _BannerOne2 = babelHelpers.interopRequireDefault(_BannerOne);
 
+var _BannerButton = require(326                ); // 326 = ./js/BannerButton
+
+var _BannerButton2 = babelHelpers.interopRequireDefault(_BannerButton);
+
 _reactNative.AppRegistry.registerComponent('topLayer', function () {
   return _TopLayer2.default;
 });
 _reactNative.AppRegistry.registerComponent('bannerOne', function () {
   return _BannerOne2.default;
+});
+_reactNative.AppRegistry.registerComponent('bannerButton', function () {
+  return _BannerButton2.default;
 });
 }, 0, null, "topLayer/index.android.js");
 __d(/* react-native-implementation */function(global, require, module, exports) {
@@ -3246,7 +3253,7 @@ module.exports = EventSubscriptionVendor;
 __d(/* ActivityIndicator */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/ActivityIndicator/ActivityIndicator.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\ActivityIndicator\\ActivityIndicator.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
 var Platform = require(23        ); // 23 = Platform
@@ -13307,8 +13314,7 @@ uuid.v4 = v4;
 
 module.exports = uuid;
 }, 80, null, "uuid/index.js");
-__d(/* uuid/v1.js */function(global, require, module, exports) {
-var rng = require(82         ); // 82 = ./lib/rng
+__d(/* uuid/v1.js */function(global, require, module, exports) {var rng = require(82         ); // 82 = ./lib/rng
 var bytesToUuid = require(83                 ); // 83 = ./lib/bytesToUuid
 
 var _seedBytes = rng();
@@ -24075,7 +24081,7 @@ module.exports = ReactNativeStackEntry;
 __d(/* View */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/View/View.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\View\\View.js';
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
 var Platform = require(23        ); // 23 = Platform
 var PropTypes = require(121         ); // 121 = prop-types
@@ -25509,7 +25515,7 @@ module.exports = requireNativeComponent;
 __d(/* UnimplementedView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/UnimplementedViews/UnimplementedView.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\UnimplementedViews\\UnimplementedView.js';
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
 
@@ -33042,7 +33048,7 @@ module.exports = ReactNativeStackEntry;
 __d(/* ReactNativeART */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/ART/ReactNativeART.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\ART\\ReactNativeART.js';
 var Color = require(176             ); // 176 = art/core/color
 var Path = require(177                  ); // 177 = ARTSerializablePath
 var Transform = require(180                 ); // 180 = art/core/transform
@@ -34383,7 +34389,7 @@ module.exports = Class({
 __d(/* Button */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Button.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Button.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var Platform = require(23        ); // 23 = Platform
 var React = require(131    ); // 131 = React
@@ -34530,7 +34536,7 @@ module.exports = Button;
 __d(/* Text */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Text/Text.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Text\\Text.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var EdgeInsetsPropType = require(148                 ); // 148 = EdgeInsetsPropType
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
@@ -34766,7 +34772,7 @@ __d(/* Touchable */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Touchable/Touchable.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Touchable\\Touchable.js';
 var BoundingDimensions = require(184                 ); // 184 = BoundingDimensions
 var Platform = require(23        ); // 23 = Platform
 var Position = require(186       ); // 186 = Position
@@ -35772,7 +35778,7 @@ module.exports = ensurePositiveDelayProps;
 __d(/* TouchableOpacity */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Touchable/TouchableOpacity.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Touchable\\TouchableOpacity.js';
 
 
 var Animated = require(195       ); // 195 = Animated
@@ -35946,7 +35952,7 @@ module.exports = Animated;
 __d(/* AnimatedImplementation */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Animated/src/AnimatedImplementation.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Animated\\src\\AnimatedImplementation.js';
 var InteractionManager = require(197                 ); // 197 = InteractionManager
 var Interpolation = require(199            ); // 199 = Interpolation
 var NativeAnimatedHelper = require(200                   ); // 200 = NativeAnimatedHelper
@@ -39320,7 +39326,7 @@ module.exports = function bezier(mX1, mY1, mX2, mY2) {
 __d(/* Image */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Image/Image.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Image\\Image.android.js';
 var ImageResizeMode = require(134              ); // 134 = ImageResizeMode
 var ImageStylePropTypes = require(133                  ); // 133 = ImageStylePropTypes
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
@@ -39614,7 +39620,7 @@ module.exports = filterObject;
 __d(/* ScrollView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\ScrollView\\ScrollView.js';
 var Animated = require(195       ); // 195 = Animated
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var EdgeInsetsPropType = require(148                 ); // 148 = EdgeInsetsPropType
@@ -40470,7 +40476,7 @@ module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactNativeC
 __d(/* ScrollViewStickyHeader */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\ScrollView\\ScrollViewStickyHeader.js';
 var Animated = require(195       ); // 195 = Animated
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
@@ -40591,7 +40597,7 @@ __d(/* DatePickerIOS */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/DatePicker/DatePickerIOS.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\DatePicker\\DatePickerIOS.android.js';
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
 var Text = require(182   ); // 182 = Text
@@ -40652,7 +40658,7 @@ module.exports = DummyDatePickerIOS;
 __d(/* DrawerLayoutAndroid */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\DrawerAndroid\\DrawerLayoutAndroid.android.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
 var Platform = require(23        ); // 23 = Platform
@@ -41098,7 +41104,7 @@ module.exports = StatusBar;
 __d(/* FlatList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Lists/FlatList.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Lists\\FlatList.js';
 var MetroListView = require(223            ); // 223 = MetroListView
 var React = require(131    ); // 131 = React
 var View = require(130   ); // 130 = View
@@ -41347,7 +41353,7 @@ module.exports = FlatList;
 __d(/* MetroListView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Lists/MetroListView.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Lists\\MetroListView.js';
 var ListView = require(224       ); // 224 = ListView
 var React = require(131    ); // 131 = React
 var RefreshControl = require(229             ); // 229 = RefreshControl
@@ -41537,7 +41543,7 @@ module.exports = MetroListView;
 __d(/* ListView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Lists/ListView/ListView.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Lists\\ListView\\ListView.js';
 var ListViewDataSource = require(225                 ); // 225 = ListViewDataSource
 var Platform = require(23        ); // 23 = Platform
 var React = require(131    ); // 131 = React
@@ -42331,7 +42337,7 @@ module.exports = cloneReferencedElement;
 __d(/* RefreshControl */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/RefreshControl/RefreshControl.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\RefreshControl\\RefreshControl.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
 var Platform = require(23        ); // 23 = Platform
@@ -42426,7 +42432,7 @@ module.exports = RefreshControl;
 __d(/* VirtualizedList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Lists/VirtualizedList.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Lists\\VirtualizedList.js';
 var Batchinator = require(231          ); // 231 = Batchinator
 var FillRateHelper = require(232             ); // 232 = FillRateHelper
 var PropTypes = require(121         ); // 121 = prop-types
@@ -43982,7 +43988,7 @@ module.exports = VirtualizeUtils;
 __d(/* ImageBackground */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Image/ImageBackground.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Image\\ImageBackground.js';
 var Image = require(206    ); // 206 = Image
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
@@ -44135,7 +44141,7 @@ module.exports = ImageStore;
 __d(/* KeyboardAvoidingView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Keyboard/KeyboardAvoidingView.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Keyboard\\KeyboardAvoidingView.js';
 var createReactClass = require(156                 ); // 156 = create-react-class
 var Keyboard = require(212       ); // 212 = Keyboard
 var LayoutAnimation = require(240              ); // 240 = LayoutAnimation
@@ -44421,7 +44427,7 @@ module.exports = require(158                ); // 158 = UnimplementedView
 __d(/* Modal */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Modal/Modal.js',
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Modal\\Modal.js',
     _container;
 
 var AppContainer = require(243           ); // 243 = AppContainer
@@ -44580,7 +44586,7 @@ __d(/* AppContainer */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/ReactNative/AppContainer.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\ReactNative\\AppContainer.js';
 var EmitterSubscription = require(35                   ); // 35 = EmitterSubscription
 var PropTypes = require(121         ); // 121 = prop-types
 var RCTDeviceEventEmitter = require(33                     ); // 33 = RCTDeviceEventEmitter
@@ -44732,7 +44738,7 @@ __d(/* Inspector */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/Inspector.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\Inspector.js';
 var Dimensions = require(161         ); // 161 = Dimensions
 var InspectorOverlay = require(245               ); // 245 = InspectorOverlay
 var InspectorPanel = require(249             ); // 249 = InspectorPanel
@@ -45016,7 +45022,7 @@ module.exports = Inspector;
 __d(/* InspectorOverlay */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/InspectorOverlay.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\InspectorOverlay.js';
 var Dimensions = require(161         ); // 161 = Dimensions
 var ElementBox = require(246         ); // 246 = ElementBox
 var PropTypes = require(121         ); // 121 = prop-types
@@ -45107,7 +45113,7 @@ module.exports = InspectorOverlay;
 __d(/* ElementBox */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/ElementBox.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\ElementBox.js';
 var React = require(131    ); // 131 = React
 var View = require(130   ); // 130 = View
 var StyleSheet = require(159         ); // 159 = StyleSheet
@@ -45203,7 +45209,7 @@ module.exports = ElementBox;
 __d(/* BorderBox */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/BorderBox.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\BorderBox.js';
 var React = require(131    ); // 131 = React
 var View = require(130   ); // 130 = View
 
@@ -45287,7 +45293,7 @@ module.exports = resolveBoxStyle;
 __d(/* InspectorPanel */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/InspectorPanel.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\InspectorPanel.js';
 var ElementProperties = require(250                ); // 250 = ElementProperties
 var NetworkOverlay = require(257             ); // 257 = NetworkOverlay
 var PerformanceOverlay = require(260                 ); // 260 = PerformanceOverlay
@@ -45527,7 +45533,7 @@ module.exports = InspectorPanel;
 __d(/* ElementProperties */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/ElementProperties.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\ElementProperties.js';
 var BoxInspector = require(251           ); // 251 = BoxInspector
 var PropTypes = require(121         ); // 121 = prop-types
 var React = require(131    ); // 131 = React
@@ -45747,7 +45753,7 @@ module.exports = ElementProperties;
 __d(/* BoxInspector */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/BoxInspector.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\BoxInspector.js';
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
 var Text = require(182   ); // 182 = Text
@@ -45964,7 +45970,7 @@ module.exports = BoxInspector;
 __d(/* StyleInspector */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/StyleInspector.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\StyleInspector.js';
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
 var Text = require(182   ); // 182 = Text
@@ -46079,7 +46085,7 @@ module.exports = StyleInspector;
 __d(/* TouchableHighlight */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Touchable/TouchableHighlight.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Touchable\\TouchableHighlight.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
 var PropTypes = require(121         ); // 121 = prop-types
@@ -46341,7 +46347,7 @@ module.exports = openFileInEditor;
 __d(/* NetworkOverlay */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/NetworkOverlay.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\NetworkOverlay.js';
 var ListView = require(224       ); // 224 = ListView
 var React = require(131    ); // 131 = React
 var ScrollView = require(208         ); // 208 = ScrollView
@@ -47270,7 +47276,7 @@ module.exports = XHRInterceptor;
 __d(/* PerformanceOverlay */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Inspector/PerformanceOverlay.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Inspector\\PerformanceOverlay.js';
 var PerformanceLogger = require(96                 ); // 96 = PerformanceLogger
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
@@ -47364,7 +47370,7 @@ __d(/* YellowBox */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/ReactNative/YellowBox.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\ReactNative\\YellowBox.js';
 var EventEmitter = require(34            ); // 34 = EventEmitter
 var Platform = require(23        ); // 23 = Platform
 var React = require(131    ); // 131 = React
@@ -48018,7 +48024,7 @@ __d(/* Picker */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Picker/Picker.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Picker\\Picker.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var PickerIOS = require(265        ); // 265 = PickerIOS
 var PickerAndroid = require(266            ); // 266 = PickerAndroid
@@ -48149,7 +48155,7 @@ __d(/* PickerAndroid */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Picker/PickerAndroid.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Picker\\PickerAndroid.android.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var React = require(131    ); // 131 = React
 var ReactPropTypes = require(121         ); // 121 = prop-types
@@ -48300,7 +48306,7 @@ module.exports = PickerAndroid;
 __d(/* ProgressBarAndroid */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/ProgressBarAndroid/ProgressBarAndroid.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\ProgressBarAndroid\\ProgressBarAndroid.android.js';
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
 var React = require(131    ); // 131 = React
 var PropTypes = require(121         ); // 121 = prop-types
@@ -48375,7 +48381,7 @@ __d(/* ProgressViewIOS */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/ProgressViewIOS/ProgressViewIOS.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\ProgressViewIOS\\ProgressViewIOS.android.js';
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
 var Text = require(182   ); // 182 = Text
@@ -48436,7 +48442,7 @@ module.exports = DummyProgressViewIOS;
 __d(/* SectionList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Lists/SectionList.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Lists\\SectionList.js';
 var MetroListView = require(223            ); // 223 = MetroListView
 var Platform = require(23        ); // 23 = Platform
 var React = require(131    ); // 131 = React
@@ -48520,7 +48526,7 @@ module.exports = SectionList;
 __d(/* VirtualizedSectionList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Lists/VirtualizedSectionList.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Lists\\VirtualizedSectionList.js';
 var React = require(131    ); // 131 = React
 var View = require(130   ); // 130 = View
 var VirtualizedList = require(230              ); // 230 = VirtualizedList
@@ -48895,7 +48901,7 @@ __d(/* SegmentedControlIOS */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\SegmentedControlIOS\\SegmentedControlIOS.android.js';
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
 var Text = require(182   ); // 182 = Text
@@ -48956,7 +48962,7 @@ module.exports = DummySegmentedControlIOS;
 __d(/* Slider */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Slider/Slider.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Slider\\Slider.js';
 var Image = require(206    ); // 206 = Image
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
@@ -49097,7 +49103,7 @@ module.exports = require(158                ); // 158 = UnimplementedView
 __d(/* Switch */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/Switch/Switch.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\Switch\\Switch.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
 var Platform = require(23        ); // 23 = Platform
@@ -49208,7 +49214,7 @@ module.exports = Switch;
 __d(/* SwipeableListView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableListView.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Experimental\\SwipeableRow\\SwipeableListView.js';
 var ListView = require(224       ); // 224 = ListView
 var PropTypes = require(121         ); // 121 = prop-types
 var React = require(131    ); // 131 = React
@@ -49462,7 +49468,7 @@ module.exports = SwipeableListViewDataSource;
 __d(/* SwipeableRow */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableRow.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Experimental\\SwipeableRow\\SwipeableRow.js';
 var Animated = require(195       ); // 195 = Animated
 var I18nManager = require(262          ); // 262 = I18nManager
 var PanResponder = require(278           ); // 278 = PanResponder
@@ -49918,7 +49924,7 @@ __d(/* TabBarIOS */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/TabBarIOS/TabBarIOS.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\TabBarIOS\\TabBarIOS.android.js';
 var React = require(131    ); // 131 = React
 var StyleSheet = require(159         ); // 159 = StyleSheet
 var TabBarItemIOS = require(281            ); // 281 = TabBarItemIOS
@@ -49964,7 +49970,7 @@ __d(/* TabBarItemIOS */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/TabBarIOS/TabBarItemIOS.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\TabBarIOS\\TabBarItemIOS.android.js';
 var React = require(131    ); // 131 = React
 var View = require(130   ); // 130 = View
 var StyleSheet = require(159         ); // 159 = StyleSheet
@@ -50018,7 +50024,7 @@ module.exports = DummyTab;
 __d(/* TextInput */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/TextInput/TextInput.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\TextInput\\TextInput.js';
 var ColorPropType = require(39             ); // 39 = ColorPropType
 var DocumentSelectionState = require(283                     ); // 283 = DocumentSelectionState
 var EventEmitter = require(34            ); // 34 = EventEmitter
@@ -50947,7 +50953,7 @@ __d(/* ToolbarAndroid */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/ToolbarAndroid/ToolbarAndroid.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\ToolbarAndroid\\ToolbarAndroid.android.js';
 var Image = require(206    ); // 206 = Image
 var NativeMethodsMixin = require(41                  ); // 41 = NativeMethodsMixin
 var React = require(131    ); // 131 = React
@@ -51057,7 +51063,7 @@ module.exports = ToolbarAndroid;
 __d(/* ViewPagerAndroid */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/ViewPager/ViewPagerAndroid.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\ViewPager\\ViewPagerAndroid.android.js';
 var React = require(131    ); // 131 = React
 var PropTypes = require(121         ); // 121 = prop-types
 var ReactNative = require(42           ); // 42 = ReactNative
@@ -51182,7 +51188,7 @@ module.exports = ViewPagerAndroid;
 __d(/* WebView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/Components/WebView/WebView.android.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\Components\\WebView\\WebView.android.js';
 var EdgeInsetsPropType = require(148                 ); // 148 = EdgeInsetsPropType
 var ActivityIndicator = require(38                 ); // 38 = ActivityIndicator
 var React = require(131    ); // 131 = React
@@ -51773,7 +51779,7 @@ __d(/* renderApplication */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/node_modules/react-native/Libraries/ReactNative/renderApplication.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native\\Libraries\\ReactNative\\renderApplication.js';
 var AppContainer = require(243           ); // 243 = AppContainer
 var React = require(131    ); // 131 = React
 var ReactNative = require(42           ); // 42 = ReactNative
@@ -52995,7 +53001,7 @@ module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.takeSnapshot
 __d(/* topLayer/js/TopLayer.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/js/TopLayer.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\js\\TopLayer.js';
 
 var _react = require(117    ); // 117 = react
 
@@ -53132,7 +53138,7 @@ var styles = _reactNative.StyleSheet.create({
   }
 });
 }, 314, null, "topLayer/js/TopLayer.js");
-__d(/* react-native-code-push/CodePush.js */function(global, require, module, exports) {var _jsxFileName = "/home/mialso/work/mob_crush/topLayer/node_modules/react-native-code-push/CodePush.js";
+__d(/* react-native-code-push/CodePush.js */function(global, require, module, exports) {var _jsxFileName = "C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\node_modules\\react-native-code-push\\CodePush.js";
 
 var _acquisitionSdk = require(316                               ); // 316 = code-push/script/acquisition-sdk
 
@@ -54205,18 +54211,79 @@ function getHttpMethodName(verb) {
 }
 }, 318, null, "react-native-code-push/request-fetch-adapter.js");
 __d(/* react-native-code-push/package.json */function(global, require, module, exports) {module.exports = module.exports = {
-  "name": "react-native-code-push",
-  "version": "5.1.0-beta",
-  "description": "React Native plugin for the CodePush service",
-  "main": "CodePush.js",
-  "typings": "typings/react-native-code-push.d.ts",
-  "homepage": "https://microsoft.github.io/code-push",
-  "keywords": ["react-native", "code", "push"],
-  "author": "Microsoft Corporation",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/react-native-code-push"
+  "_args": [[{
+    "raw": "react-native-code-push@5.1.0-beta",
+    "scope": null,
+    "escapedName": "react-native-code-push",
+    "name": "react-native-code-push",
+    "rawSpec": "5.1.0-beta",
+    "spec": "5.1.0-beta",
+    "type": "version"
+  }, "C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example"]],
+  "_from": "react-native-code-push@5.1.0-beta",
+  "_id": "react-native-code-push@5.1.0-beta",
+  "_inCache": true,
+  "_location": "/react-native-code-push",
+  "_nodeVersion": "6.6.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-code-push-5.1.0-beta.tgz_1505377789985_0.6876515119802207"
+  },
+  "_npmUser": {
+    "name": "max-mironov",
+    "email": "v-maximi@microsoft.com"
+  },
+  "_npmVersion": "5.0.4",
+  "_phantomChildren": {
+    "chalk": "1.1.3",
+    "cli-width": "2.2.0",
+    "code-point-at": "1.1.0",
+    "escape-string-regexp": "1.0.5",
+    "exit-hook": "1.1.1",
+    "extend": "3.0.1",
+    "inflight": "1.0.6",
+    "inherits": "2.0.3",
+    "lodash": "4.17.4",
+    "minimatch": "3.0.4",
+    "number-is-nan": "1.0.1",
+    "object-assign": "4.1.1",
+    "once": "1.4.0",
+    "os-tmpdir": "1.0.2",
+    "path-is-absolute": "1.0.1",
+    "pinkie-promise": "2.0.1",
+    "plist": "1.2.0",
+    "q": "1.4.1",
+    "recursive-fs": "0.1.4",
+    "run-async": "2.3.0",
+    "rx": "4.1.0",
+    "slash": "1.0.0",
+    "spawn-sync": "1.0.15",
+    "strip-ansi": "3.0.1",
+    "superagent": "1.8.5",
+    "superagent-proxy": "1.0.2",
+    "through": "2.3.8",
+    "yazl": "2.4.2"
+  },
+  "_requested": {
+    "raw": "react-native-code-push@5.1.0-beta",
+    "scope": null,
+    "escapedName": "react-native-code-push",
+    "name": "react-native-code-push",
+    "rawSpec": "5.1.0-beta",
+    "spec": "5.1.0-beta",
+    "type": "version"
+  },
+  "_requiredBy": ["#DEV:/"],
+  "_resolved": "https://registry.npmjs.org/react-native-code-push/-/react-native-code-push-5.1.0-beta.tgz",
+  "_shasum": "9754e5cc680535cc0a95613f53d6c7cfabdb0f9e",
+  "_shrinkwrap": null,
+  "_spec": "react-native-code-push@5.1.0-beta",
+  "_where": "C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example",
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "bugs": {
+    "url": "https://github.com/Microsoft/react-native-code-push/issues"
   },
   "dependencies": {
     "code-push": "1.11.2-beta",
@@ -54225,6 +54292,7 @@ __d(/* react-native-code-push/package.json */function(global, require, module, e
     "plist": "1.2.0",
     "xcode": "0.9.2"
   },
+  "description": "React Native plugin for the CodePush service",
   "devDependencies": {
     "archiver": "latest",
     "body-parser": "latest",
@@ -54239,6 +54307,52 @@ __d(/* react-native-code-push/package.json */function(global, require, module, e
     "run-sequence": "latest",
     "tslint": "^4.3.1",
     "typescript": "^2.1.5"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-G6XgX9zon/F8uutUZlPWpe0LsA3R+hIgtDWTMqdP4Sg/6zoFEgfb1VcIk1qj4h+aTiXWENM4MwwqSC2DzLHadg==",
+    "shasum": "9754e5cc680535cc0a95613f53d6c7cfabdb0f9e",
+    "tarball": "https://registry.npmjs.org/react-native-code-push/-/react-native-code-push-5.1.0-beta.tgz"
+  },
+  "gitHead": "cc9a204be92240a741f24e1efbe455a5115e79cf",
+  "homepage": "https://microsoft.github.io/code-push",
+  "keywords": ["react-native", "code", "push"],
+  "license": "MIT",
+  "main": "CodePush.js",
+  "maintainers": [{
+    "name": "axemclion",
+    "email": "code@nparashuram.com"
+  }, {
+    "name": "bokang",
+    "email": "buptkang@gmail.com"
+  }, {
+    "name": "bretjohnson",
+    "email": "bret.johnson@microsoft.com"
+  }, {
+    "name": "max-mironov",
+    "email": "v-maximi@microsoft.com"
+  }, {
+    "name": "maximpop",
+    "email": "maximpop@microsoft.com"
+  }, {
+    "name": "pniko",
+    "email": "patrick.nikoletich@microsoft.com"
+  }, {
+    "name": "ryanjsalva",
+    "email": "ryanjsalva@gmail.com"
+  }, {
+    "name": "sergey-akhalkov",
+    "email": "v-seakha@microsoft.com"
+  }, {
+    "name": "silhouettes",
+    "email": "rich@rkhua.com"
+  }],
+  "name": "react-native-code-push",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Microsoft/react-native-code-push.git"
   },
   "rnpm": {
     "android": {
@@ -54255,7 +54369,9 @@ __d(/* react-native-code-push/package.json */function(global, require, module, e
     "commands": {
       "postlink": "node node_modules/react-native-code-push/scripts/postlink/run"
     }
-  }
+  },
+  "typings": "typings/react-native-code-push.d.ts",
+  "version": "5.1.0-beta"
 };
 }, 319, null, "react-native-code-push/package.json");
 __d(/* react-native-code-push/RestartManager.js */function(global, require, module, exports) {var log = require(321        ); // 321 = ./logging
@@ -54474,7 +54590,7 @@ exports.default = _reactNative.NativeModules.ReactStore;
 __d(/* topLayer/js/BannerOne.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/home/mialso/work/mob_crush/topLayer/js/BannerOne.js';
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\js\\BannerOne.js';
 
 var _react = require(117    ); // 117 = react
 
@@ -54513,7 +54629,6 @@ var BannerOne = function BannerOne() {
       _react2.default.createElement(_reactNative.Image, {
         resizeMode: 'cover',
         style: { width: 180, height: 180 },
-
         source: require(325                       ), __source: { // 325 = ../static/banner_one.png
           fileName: _jsxFileName,
           lineNumber: 19
@@ -54537,5 +54652,73 @@ var styles = _reactNative.StyleSheet.create({
 }, 324, null, "topLayer/js/BannerOne.js");
 __d(/* topLayer/static/banner_one.png */function(global, require, module, exports) {module.exports=require(169                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/static","width":174,"height":164,"scales":[1],"hash":"4c8f8ad278482000682525c91807a12f","name":"banner_one","type":"png"}); // 169 = react-native/Libraries/Image/AssetRegistry
 }, 325, null, "topLayer/static/banner_one.png");
+__d(/* topLayer/js/BannerButton.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = 'C:\\Users\\NPanfilov\\AndroidStudioProjects\\Tests\\rn-layer-example\\js\\BannerButton.js';
+
+var _react = require(117    ); // 117 = react
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNativeCodePush = require(315                     ); // 315 = react-native-code-push
+
+var _reactNativeCodePush2 = babelHelpers.interopRequireDefault(_reactNativeCodePush);
+
+var _reactNative = require(12            ); // 12 = react-native
+
+var _store = require(323      ); // 323 = ./store
+
+var _store2 = babelHelpers.interopRequireDefault(_store);
+
+var BannerButton = function BannerButton() {
+  return _react2.default.createElement(
+    _reactNative.View,
+    {
+      pointerEvents: 'box-none',
+      style: styles.container, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      }
+    },
+    _react2.default.createElement(
+      _reactNative.TouchableOpacity,
+      { onPress: function onPress() {
+          return _store2.default.bannerClick("awesome banner buttton");
+        }, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        }
+      },
+      _react2.default.createElement(
+        _reactNative.Text,
+        { style: styles.buttonText, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
+        '"BannerButton"'
+      )
+    )
+  );
+};
+
+exports.default = (0, _reactNativeCodePush2.default)(BannerButton);
+
+
+var styles = _reactNative.StyleSheet.create({
+  container: {
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start'
+  },
+  buttonText: {
+    alignSelf: 'center',
+    color: 'red',
+    fontSize: 16,
+    fontWeight: 'bold',
+    padding: 20
+  }
+});
+}, 326, null, "topLayer/js/BannerButton.js");
 ;require(50);
 ;require(0);

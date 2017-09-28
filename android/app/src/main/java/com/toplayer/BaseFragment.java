@@ -60,7 +60,8 @@ public class BaseFragment extends Fragment {
     }
 
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        textView.setText(textView.getText() + "\n" + ev.toString() + (view.dispatchTouchEvent(ev) ? "HANDLED" : ""));
+        view.dispatchTouchEvent(ev);
+//        textView.setText(textView.getText() + "\n" + ev.toString() + (view.dispatchTouchEvent(ev) ? "HANDLED" : ""));
         return false;
     }
 
